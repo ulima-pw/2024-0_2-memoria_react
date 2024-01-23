@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import Tablero from "./components/Tablero"
 
 const simbolosDisponibles = ["&#128151;", "&#128525;", "&#128516;"]
@@ -32,6 +33,7 @@ const MemoriaPage = () => {
             cols={3} 
             listaCasillas={ listaCasillas }
             mostrarOnClick={ mostrarCasillaOnClick }/>
+        <Link to={"ejemplo"} >Link hacia Ejemplo </Link>
     </div>
 }
 
