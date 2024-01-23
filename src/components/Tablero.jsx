@@ -1,9 +1,9 @@
 import Fila from "./Fila"
 
-const Tablero = () => {
+const Tablero = (props) => {
     return <div>
-        <Fila />
-        <Fila />
+        <Fila casillas={ props.listaCasillas[0] }/>
+        <Fila casillas={ props.listaCasillas[1] }/>
     </div>
 }
 
